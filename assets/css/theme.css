@@ -1,0 +1,116 @@
+:root {
+    --ar-blue: #0d6efd;
+    --ar-indigo: #6610f2;
+    --ar-purple: #6f42c1;
+    --ar-pink: #d63384;
+    --ar-red: #dc3545;
+    --ar-orange: #fd7e14;
+    --ar-yellow: #ffc107;
+    --ar-green: #198754;
+    --ar-teal: #20c997;
+    --ar-cyan: #0dcaf0;
+    --ar-black: #000;
+    --ar-white: #fff;
+    --ar-gray: #858c97;
+    --ar-gray-dark: #434a57;
+    --ar-gray-100: #f6f9fc;
+    --ar-gray-200: #edf1f5;
+    --ar-gray-300: #e3e9ef;
+    --ar-gray-400: #d7dde2;
+    --ar-gray-500: #b4bbc3;
+    --ar-gray-600: #858c97;
+    --ar-gray-700: #576071;
+    --ar-gray-800: #434a57;
+    --ar-gray-900: #121519;
+    --ar-primary: #448c74;
+    --ar-secondary: #edf1f5;
+    --ar-success: #3fca90;
+    --ar-info: #3f7fca;
+    --ar-warning: #edcb50;
+    --ar-danger: #ed5050;
+    --ar-light: #fff;
+    --ar-dark: #121519;
+    --ar-primary-rgb: 68, 140, 116;
+    --ar-secondary-rgb: 237, 241, 245;
+    --ar-success-rgb: 63, 202, 144;
+    --ar-info-rgb: 63, 127, 202;
+    --ar-warning-rgb: 237, 203, 80;
+    --ar-danger-rgb: 237, 80, 80;
+    --ar-light-rgb: 255, 255, 255;
+    --ar-dark-rgb: 18, 21, 25;
+    --ar-white-rgb: 255, 255, 255;
+    --ar-black-rgb: 0, 0, 0;
+    --ar-body-color-rgb: 87, 96, 113;
+    --ar-body-bg-rgb: 255, 255, 255;
+    --ar-font-sans-serif: "Inter", sans-serif;
+    --ar-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+        "Liberation Mono", "Courier New", monospace;
+    --ar-gradient: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.15),
+        rgba(255, 255, 255, 0)
+    );
+    --ar-root-font-size: 1rem;
+    --ar-body-font-family: var(--ar-font-sans-serif);
+    --ar-body-font-size: 1rem;
+    --ar-body-font-weight: 400;
+    --ar-body-line-height: 1.5;
+    --ar-body-color: #576071;
+    --ar-body-bg: #fff;
+    --ar-border-width: 1px;
+    --ar-border-style: solid;
+    --ar-border-color: #e3e9ef;
+    --ar-border-color-translucent: rgba(0, 0, 0, 0.175);
+    --ar-border-radius: 1rem;
+    --ar-border-radius-sm: calc(var(--ar-border-radius) * 0.75);
+    --ar-border-radius-lg: calc(var(--ar-border-radius) * 1.125);
+    --ar-border-radius-xl: calc(var(--ar-border-radius) * 1.5);
+    --ar-border-radius-2xl: calc(var(--ar-border-radius) * 2.25);
+    --ar-border-radius-pill: 50rem;
+    --ar-link-color: #448c74;
+    --ar-link-hover-color: #37715d;
+    --ar-code-color: #e3116c;
+    --ar-highlight-bg: #fff3cd;
+}
+
+.swiper-thumbnails {
+    position: static;
+    display: flex;
+    flex-wrap: wrap;
+}
+.swiper-thumbnails:not(.justify-content-center) {
+    margin-left: 0.5rem;
+    padding-top: 1rem;
+}
+.swiper-thumbnails.justify-content-end {
+    margin-right: 0.5rem;
+    margin-left: 0rem;
+}
+
+.swiper-thumbnail {
+    height: auto;
+    width: 100%;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+.swiper-thumbnail:last-child {
+    margin-right: 0 !important;
+}
+.swiper-thumbnail > img {
+    transition: opacity 0.25s ease-in-out;
+    opacity: 0.45;
+}
+.swiper-thumbnail:hover > img {
+    opacity: 0.8;
+}
+.swiper-thumbnail.active {
+    border-color: #8eb63e;
+}
+.swiper-thumbnail.active > img {
+    opacity: 1;
+}
+
+.swiper-thumbnails-circle .swiper-thumbnail,
+.swiper-thumbnails-circle .swiper-thumbnail > img {
+    border-radius: 50%;
+}

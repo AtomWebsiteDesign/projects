@@ -1,0 +1,79 @@
+body
+  section.container.mt-5
+    .row
+      .col-lg-6
+        #my-gallery
+      .col-lg-6
+        h1.pb-3 #{productTitle}
+        nav
+          #nav-tab.nav.nav-tabs(role='tablist')
+            button#nav-details-tab.nav-link.active(data-bs-toggle='tab' data-bs-target='#nav-details' type='button' role='tab' aria-controls='nav-details' aria-selected='true')
+              span
+                i.fa-solid.fa-circle-info.fa-xl
+                | &nbsp; &nbsp;Details
+            button#nav-features-tab.nav-link(data-bs-toggle='tab' data-bs-target='#nav-features' type='button' role='tab' aria-controls='nav-features' aria-selected='false')
+              span
+                i.fa-solid.fa-circle-check.fa-xl
+                | &nbsp; &nbsp;Features
+            button#nav-drawings-tab.nav-link(data-bs-toggle='tab' data-bs-target='#nav-drawings' type='button' role='tab' aria-controls='nav-drawings' aria-selected='false')
+              span
+                span.fa-stack.small
+                  i.fa-solid.fa-circle.fa-stack-2x
+                  i.fa-solid.fa-pen-ruler.fa-stack-1x.fa-inverse
+                | &nbsp;&nbsp;Drawings
+        #nav-tabContent.tab-content.m-4
+          #nav-details.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='nav-details-tab' tabindex='0')
+            p.product-details 
+              | The Active Learning concept is a growing trend on most college campuses. The design of the Computer Comforts ALC Furniture is based on guidelines from the original SCALE-UP and TEAL learning model. This model creates "collaborative learning in a studio like setting".
+          #nav-features.tab-pane.fade(role='tabpanel' aria-labelledby='nav-features-tab' tabindex='0')
+            .product-features
+              ul
+                li Modesty panel and cable management tray.
+                li Low profile design to allow for clear view.
+                li Dimensions:
+                  ul
+                    li Any width range from 30&rdquo; to 84&rdquo;
+                    li Any depth range from 24&quot; to 30&quot;
+                    li Standard heights 28&quot;, 32&rdquo; and 36&quot;
+          #nav-drawings.tab-pane.fade(role='tabpanel' aria-labelledby='nav-drawings-tab' tabindex='0')
+            .row.row-cols-2.row-cols-md-3.g-4
+              // Drawing 1
+              .col
+                .card.h-100
+                  img.card-img-top(src='https://res.cloudinary.com/computer-comforts/image/upload/t_drawing-thumbnail/v1675271708/drawings/ALC-72-RND-LP.pdf' alt='Drawing of Active Learning Cluster model number ALC-72-RND-LP')
+                  .card-body
+                    h5.card-title ALC-72-RND-LP
+                    a(href='https://res.cloudinary.com/computer-comforts/image/upload/v1675271708/drawings/ALC-72-RND-LP.pdf' target='_blank')
+                      small.text-muted
+                        i.bi.bi-download
+                        span.mx-2 Download
+              // Drawing 2
+              .col
+                .card.h-100
+                  img.card-img-top(src='https://res.cloudinary.com/computer-comforts/image/upload/t_drawing-thumbnail/v1675271708/drawings/ALC-72-TRI-LP.pdf' alt='Drawing of Active Learning Cluster model number ALC-72-TRI-LP')
+                  .card-body
+                    h5.card-title ALC-72-TRI-LP
+                    a(href='https://res.cloudinary.com/computer-comforts/image/upload/v1675271708/drawings/ALC-72-TRI-LP.pdf' target='_blank')
+                      small.text-muted
+                        i.bi.bi-download
+                        span.mx-2 Download
+              // Drawing 3
+              .col
+                .card.h-100
+                  img.card-img-top(src='https://res.cloudinary.com/computer-comforts/image/upload/t_drawing-thumbnail/v1675271708/drawings/ALC-84-RND-LP.pdf' alt='Drawing of Active Learning Cluster model number ALC-84-RND-LP')
+                  .card-body
+                    h5.card-title ALC-84-RND-LP
+                    a(href='https://res.cloudinary.com/computer-comforts/image/upload/v1675271708/drawings/ALC-84-RND-LP.pdf' target='_blank')
+                      small.text-muted
+                        i.bi.bi-download
+                        span.mx-2 Download
+              // Drawing 4
+              .col
+                .card.h-100
+                  img.card-img-top(src='https://res.cloudinary.com/computer-comforts/image/upload/t_drawing-thumbnail/v1675271708/drawings/ALC-84-TRI-LP.pdf' alt='Drawing of Active Learning Cluster model number ALC-84-TRI-LP')
+                  .card-body
+                    h5.card-title ALC-84-TRI-LP
+                    a(href='https://res.cloudinary.com/computer-comforts/image/upload/v1675271708/drawings/ALC-84-TRI-LP.pdf' target='_blank')
+                      small.text-muted
+                        i.bi.bi-download
+                        span.mx-2 Download

@@ -1,0 +1,89 @@
+:root {
+  --ar-primary: #8eb63e;
+  --ar-primary-rgb: 142, 182, 116;
+  --ar-border-width: 1px;
+}
+
+.hotspots,
+.hotspots-alt {
+  position: relative;
+}
+.hotspots .hotspot,
+.hotspots-alt .hotspot {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 2;
+}
+.hotspots .hotspot-inner,
+.hotspots-alt .hotspot-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+  border-radius: 50%;
+}
+
+.hotspots {
+  --ar-hotspots-size: 1rem;
+  --ar-hotspots-border-width: var(--ar-border-width);
+  --ar-hotspots-border-color: rgba(255, 255, 255, 0.5);
+  --ar-hotspots-color: var(--ar-primary);
+  --ar-hotspots-inner-bg: #fff;
+  --ar-hotspots-hover-border-color: rgba(var(--ar-primary-rgb), 0.5);
+  --ar-hotspots-hover-color: #fff;
+  --ar-hotspots-hover-inner-bg: var(--ar-primary);
+}
+.hotspots .hotspot {
+  width: var(--ar-hotspots-size);
+  height: var(--ar-hotspots-size);
+  border: var(--ar-hotspots-border-width) solid var(--ar-hotspots-border-color);
+}
+.hotspots .hotspot-inner {
+  width: calc(var(--ar-hotspots-size) - 3rem);
+  height: calc(var(--ar-hotspots-size) - 3rem);
+  background-color: var(--ar-hotspots-inner-bg);
+  color: var(--ar-hotspots-color);
+  font-weight: 600;
+}
+.hotspots [class^="ai-"],
+.hotspots [class*=" ai-"] {
+  font-size: 1.2em;
+}
+.hotspots .hotspot:hover,
+.hotspots .hotspot:focus {
+  border-color: var(--ar-hotspots-hover-border-color);
+}
+.hotspots .hotspot:hover .hotspot-inner,
+.hotspots .hotspot:focus .hotspot-inner {
+  background-color: var(--ar-hotspots-hover-inner-bg);
+  color: var(--ar-hotspots-hover-color);
+}
+
+.hotspots-alt {
+  --ar-hotspots-size: 2.5rem;
+  --ar-hotspots-border-width: var(--ar-border-width);
+  --ar-hotspots-border-color: rgba(255, 255, 255, 0.4);
+  --ar-hotspots-bg: rgba(255, 255, 255, 0.1);
+  --ar-hotspots-inner-bg: #fff;
+  --ar-hotspots-hover-border-color: rgba(var(--ar-primary-rgb), 0.4);
+  --ar-hotspots-hover-bg: rgba(var(--ar-primary-rgb), 0.2);
+  --ar-hotspots-hover-inner-bg: var(--ar-primary);
+}
+.hotspots-alt .hotspot {
+  background-color: var(--ar-hotspots-bg);
+  -webkit-backdrop-filter: blur(0.25rem);
+  backdrop-filter: blur(0.25rem);
+}
+.hotspots-alt .hotspot:hover,
+.hotspots-alt .hotspot:focus {
+  background-color: var(--ar-hotspots-hover-bg);
+}
+.hotspots-alt .hotspot-inner {
+  width: calc(var(--ar-hotspots-size) - 1.5rem);
+  height: calc(var(--ar-hotspots-size) - 1.5rem);
+}
